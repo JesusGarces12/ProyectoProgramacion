@@ -1,0 +1,35 @@
+#contenedor{
+    background-color:darkolivegreen;
+    font-family: 'Libre Baskerville', serif;
+    color: aliceblue;
+}
+
+#usuario{
+    margin-left: 300px;
+    margin-top: -300px;
+
+}
+
+#usuario-prompt{
+    margin-left: 155px;
+    margin-top: -270px;
+    font-family: 'Libre Baskerville', serif;
+}
+
+#contraseña{
+    margin-left: 300px;
+    margin-top: -220px;
+}
+
+#contraseña-prompt{
+    margin-left: 155px;
+    margin-top: -190px;
+    font-family: 'Libre Baskerville', serif;
+}
+
+#iniciar{
+    margin-left: 570px;
+    margin-top: -270px;
+    font-family: 'Libre Baskerville', serif;
+}
+

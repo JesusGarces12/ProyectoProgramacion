@@ -14,6 +14,12 @@
     font-size: 1.4em;
 }
 
+#inicio{
+    text-align: center;
+    justify-content: center;
+    font-size: 1.7em;
+}
+
 #header{
     background-color:darkolivegreen;
     /*font-family: 'Libre Baskerville', serif; */
@@ -42,8 +48,8 @@
     text-align: center;
     margin-top: 20px;
     position: absolute;
-    top: 10%;  /* Centra verticalmente */ 
-    left: 30%; /* Centra horizontalmente */
+    top: 10%;  
+    left: 30%; 
     /*transform: translate(-50%, -50%); /* Ajuste fino para centrar */
     white-space: nowrap; /* Evita que las palabras se dividan */
 }
@@ -74,6 +80,7 @@
     color:antiquewhite;
     background: var(--card-bg, #ffffff); /* Fondo por defecto */
     transition: background 0.3s ease-in-out;
+    text-decoration: none;
 }
 
 
@@ -125,8 +132,9 @@
 }
 
 .card-list .card-link:hover .card-button{
-    color:antiquewhite;
-    background-color:lawngreen;
+    color:antiquewhite; 
+    background-color:lawngreen; 
+    
 }
 
 #titulo-2{
