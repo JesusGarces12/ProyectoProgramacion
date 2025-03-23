@@ -33,4 +33,21 @@ const swiper = new Swiper('.card-wrapper', {
     let gradient = item.getAttribute('data-gradient'); // Obtiene el gradiente del atributo
     item.querySelector('.card-link').style.setProperty('--card-bg', gradient);
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  let usuario = sessionStorage.getItem("usuario");
+  if (usuario) {
+      let boton = document.getElementById("inicioSesion");
+      if (boton) {
+          boton.innerText = "Bienvenido, " + usuario;
+      }
+  }
+});
+
+window.addEventListener("pageshow", function (event) {
+  if (event.persisted) {
+      sessionStorage.removeItem("usuario"); 
+      location.reload();
+  }
+});
   

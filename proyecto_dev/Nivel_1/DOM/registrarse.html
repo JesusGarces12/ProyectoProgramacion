@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= device-width, initial-scale=1.0">
+    <title>Registro de usuario</title>
+</head>
+<body>
+    <div class="container-fluid" id="contenedor">
+        <div class="form-box text-center">
+            <div class="mb-3">
+                <label for="usuario">Ingresa el usuario que te gustaría tener</label>
+                <input type="email" name="usuario" id="usuario" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="contraseña">Ingresa la contraseña que te gustaria tener</label>
+                <input type="password" name="contraseña" id="contraseña2" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="contraseña">Ingresa la contraseña de nuevo</label>
+                <input type="password" name="contraseña" id="contraseñaConfirmada" class="form-control">
+            </div>
+            <button type="button" class="btn btn-success" id="registrar" onclick="registroContraseña()">Registrarse</button>
+        </div>
+    </div>
+</body>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+    crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/registrarse.css">
+<script src="js/registrarse.js"></script>
+</html>
