@@ -3,7 +3,7 @@
 }
 
 #header{
-    background-color:darkolivegreen;
+    background-color:rgb(68, 255, 0);
     /*font-family: 'Libre Baskerville', serif; */
     color: aliceblue;
 }
@@ -12,8 +12,8 @@
 }
 #body{
     background-color:green;
-    width:100%;
-    height: 70%;
+    width: auto;
+    height: auto;
     overflow: hidden;
     padding-left: 0;
     padding-right: 0;
