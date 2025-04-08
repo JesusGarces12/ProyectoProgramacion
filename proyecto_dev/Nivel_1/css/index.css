@@ -10,6 +10,10 @@
     font-size: 1.4em;
 }
 
+#especie{
+    cursor: pointer;
+}
+
 .col-2{
     font-size: 1.4em;
 }
