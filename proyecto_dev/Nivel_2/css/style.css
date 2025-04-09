@@ -26,6 +26,7 @@
 }
 #home{
     text-decoration: underline;
+    cursor: pointer;
 }
 .gris{
     color:cadetblue;
@@ -75,7 +76,7 @@
     display: flex;           
 }
 #aves{
-    background-image: url('../source/9d7d40986213dd3086c6396113e022cc.jpeg');
+    background-image: url('../source/istockphoto-1410185884-612x612.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
