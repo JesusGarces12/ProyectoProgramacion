@@ -7,26 +7,60 @@
 </head>
 <body>
     <div class="container-fluid" id="header">
-        <div class="row">
-          <div class="col-4">
+        <div class="row align-items-center">
+          <div class="col-3">
             <span class="verde">Bio</span> <span class="gris">Bolivar</span>
           </div>
-          <div class="col-1" id="home" onclick="window.location.href='../Nivel_1/index.html'">
-            Home
+      
+          <!-- HOME -->
+          <div class="col-auto">
+            <div class="dropdown">
+              <button class="dropbtn" onclick="window.location.href='../Nivel_1/index.html'">Home</button>
+            </div>
           </div>
-          <div class="col-1">
-            Especies
+      
+          <!-- ESPECIES -->
+          <div class="col-auto">
+            <div class="dropdown">
+              <button class="dropbtn">Especies</button>
+            </div>
           </div>
-          <div class="col-1">
-            Causas
+      
+          <!-- CLASIFICACIÓN -->
+          <div class="col-auto">
+            <div class="dropdown">
+              <button class="dropbtn">Clasificación</button>
+              <div class="dropdown-content">
+                <a onclick="window.location.href='../Nivel_3/reptiles.html'">Reptiles</a>
+                <a onclick="window.location.href='../Nivel_3/mamiferos.html'">Mamíferos</a>
+                <a onclick="window.location.href='../Nivel_3/aves.html'">Aves</a>
+              </div>
+            </div>
           </div>
-          <div class="col-2">
-            Como ayudar
+      
+          <!-- ANIMALES -->
+          <div class="col-auto">
+            <div class="dropdown">
+              <button class="dropbtn">Animales</button>
+              <div class="dropdown-content">
+                <a href="../Nivel_4/page_01/index.html">Iguana</a>
+                <a href="../Nivel_4/page_02/index.html">Tortuga Hicotea</a>
+                <a href="../Nivel_4/page_03/index.html">Tortuga Morrocoy</a>
+                <a href="../Nivel_4/page_04/index.html">Chigüiro Menor</a>
+                <a href="../Nivel_4/page_05/index.html">Tití gris</a>
+                <a href="../Nivel_4/page_06/index.html">Tití Cabeciblanco</a>
+                <a href="../Nivel_4/page_07/index.html">Guacamaya Verde</a>
+                <a href="../Nivel_4/page_08/index.html">Paujil de pico azul</a>
+                <a href="../Nivel_4/page_09/index.html">Águila Arpía</a>
+              </div>
+            </div>
           </div>
-          <div class="col-3">    
+      
+          <!-- INICIAR SESIÓN -->
+          <div class="col-3 d-flex justify-content-end" id="inicio">
           </div>
         </div>
-    </div>
+      </div>
     <div class="container-fluid" id="body">
         <div id="titulo-2">
             Especies
@@ -35,7 +69,7 @@
             <div class="col-4 col-4-body" id="mamiferos">
                 <div class="form-box text-center">
                     <div class="mb-3">
-                        <h1 class="titulo-box">Mamiferos</h1>
+                        <h1 class="titulo-box" onclick="window.location.href='../Nivel_3/mamiferos.html'">Mamiferos</h1>
                     </div>
                     <div class="mb-3">
                         <p class="body-box">
@@ -53,7 +87,7 @@
             <div class="col-4 col-4-body" id="reptiles">
                 <div class="form-box text-center">
                     <div class="mb-3">
-                        <h1 class="titulo-box">Reptiles</h1>
+                        <h1 class="titulo-box" onclick="window.location.href='../Nivel_3/reptiles.html'">Reptiles</h1>
                     </div>
                     <div class="mb-3">
                         <p class="body-box">
@@ -72,7 +106,7 @@
             <div class="col-4 col-4-body" id="aves">
                 <div class="form-box text-center">
                     <div class="mb-3">
-                        <h1 class="titulo-box">Aves</h1>
+                        <h1 class="titulo-box" onclick="window.location.href='../Nivel_3/aves.html'">Aves</h1>
                     </div>
                     <div class="mb-3">
                         <p class="body-box">

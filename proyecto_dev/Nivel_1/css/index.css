@@ -1,36 +1,98 @@
-*{
-    font-family:' Libre Baskerville', serif;
-}
-
-.col-4{
+/* Reset general */
+* {
+    font-family: 'Libre Baskerville', serif;
+    box-sizing: border-box;
+  }
+  
+  /* Estructura heredada */
+  .col-3 {
     font-size: 1.7em;
-}
-
-.col-1{
+  }
+  
+  .col-1{
     font-size: 1.4em;
-}
+  }
 
-#especie{
+  .col-auto{
+    font-size: 1.4em;
+  }
+
+  .col-2 {
+    font-size: 1.4em;
+  }
+  
+  #especie {
     cursor: pointer;
-}
+  }
+  
 
-.col-2{
-    font-size: 1.4em;
-}
-
-#inicio{
+  #inicio {
     text-align: center;
     justify-content: center;
     font-size: 1.7em;
-}
-
-#header{
-    background-color:darkolivegreen;
+  }
+  
+  #header {
+    background-color: darkolivegreen;
     color: aliceblue;
-}
-#home{
+    padding: 10px 20px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+  }
+  
+  #home {
     text-decoration: underline;
-}
+    cursor: pointer;
+  }
+  
+  /* Dropdown styles heredados de navbar */
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropbtn {
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #003f00;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 200;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 10px 14px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #004d00;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Opcional: para alinear mejor el contenido verticalmente */
+  .row.align-items-center {
+    display: flex;
+    align-items: center;
+  }
+  
+
 #body{
     background-color:green;
     width:100%;

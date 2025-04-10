@@ -22,7 +22,15 @@ function mostrarPopup(mensaje, tiempo = 2000, callback = null) {
 }
 
 function Guardar(){
-    mostrarPopup("¡Sus datos para contactos han sido guardados! Sigue disfrutando del resto de la pagina mientras tanto", 2000, () => {
-        window.location.href = "../index.html";
-    });
+    let email = document.getElementById("email").value.trim();
+    let numero = document.getElementById("numero").value.trim();
+
+    if (email === "" || numero === ""){
+        mostrarPopup("Por favor, rellena todos los campos de contacto antes de continuar.", 2000);
+    }
+    else{
+        mostrarPopup("¡Sus datos para contactos han sido guardados! Sigue disfrutando del resto de la pagina mientras tanto", 2000, () => {
+            window.location.href = "../index.html";
+        });
+    }  
 }

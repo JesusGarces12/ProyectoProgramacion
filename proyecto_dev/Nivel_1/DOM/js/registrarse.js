@@ -22,13 +22,16 @@ function mostrarPopup(mensaje, tiempo = 2000, callback = null) {
 }
 
 function registroContraseña(){
+    let usuario = document.getElementById("usuario").value;
     let contraseña = document.getElementById("contraseña2").value;
     let contraseñaConfirmada = document.getElementById("contraseñaConfirmada").value;
     let guest = "Guest";
 
-    if (contraseña === contraseñaConfirmada) {
+    if(contraseña === "" || contraseñaConfirmada === "" || usuario === ""){
+        mostrarPopup("Por favor, rellena todos los campos de registro  antes de continuar.", 2000)
+    }
+    else if (contraseña === contraseñaConfirmada) {
         sessionStorage.setItem("usuario", guest);
-
         mostrarPopup("¡Registro exitoso! Serás ingresado como invitado.", 2000, () => {
             window.location.href = "../index.html";
         });
